@@ -1,0 +1,22 @@
+{
+  "name": "billdost-bot",
+  "version": "1.0.0",
+  "description": "Telegram Invoice Generator Bot for Freelancers",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "node test-webhook.js",
+    "db:migrate:local": "wrangler d1 execute billkaro-db --local --file=schema.sql",
+    "db:migrate": "wrangler d1 execute billkaro-db --remote --file=schema.sql",
+    "db:migrate:payment-plans": "wrangler d1 execute billkaro-db --remote --file=migrate-payment-plans.sql",
+    "db:migrate:admin-panel": "wrangler d1 execute billkaro-db --remote --file=migrate-admin-panel.sql"
+  },
+  "devDependencies": {
+    "wrangler": "^4.165.0"
+  },
+  "dependencies": {
+    "pdf-lib": "^1.17.1"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "billkaro-bot",
+  "main": "src/index.js",
+  "compatibility_date": "2025-07-18",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "billkaro-db",
+      "database_id": "68bd8139-89fc-452d-aee3-26f6308168f6"
+    }
+  ]
+}

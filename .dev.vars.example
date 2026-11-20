@@ -1,0 +1,8 @@
+# Copy to .dev.vars for local development and replace placeholders with real values.
+TELEGRAM_BOT_TOKEN=replace_with_telegram_bot_token
+TELEGRAM_SECRET_TOKEN=replace_with_webhook_secret
+ADMIN_TELEGRAM_IDS=replace_with_admin_telegram_id
+SUBSCRIPTION_PRICE_MONTHLY_INR=replace_with_monthly_price
+SUBSCRIPTION_PRICE_YEARLY_INR=replace_with_yearly_price
+SUBSCRIPTION_UPI_ID=replace_with_subscription_upi_id
+# Optional: SUBSCRIPTION_QR_FILE_ID=replace_with_telegram_file_id
